@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+:root {
+    --primary-color: #2e80ce;
+    --dark-color: #10375c;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===================== Common ======================== */
+a {
+    text-decoration: none;
+}
+
+.line-clamp {
+    --line-clamp: 2;
+
+    display: -webkit-box;
+    line-clamp: var(--line-clamp);
+    -webkit-line-clamp: var(--line-clamp);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
+}
+
+.break-all {
+    word-break: break-all;
+}
+
+/* ===================== Common ======================== */
+/* ===================== Common ======================== */
+/* ===================== Common ======================== */
+/* ===================== Common ======================== */
+/* ===================== Common ======================== */
+/* ===================== Common ======================== */
+/* ===================== Common ======================== */
+/* ===================== Common ======================== */
