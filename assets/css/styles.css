@@ -47,6 +47,153 @@ a {
     word-break: break-all;
 }
 
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 205px;
+    height: 60px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+
+    color: #fff;
+    background: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/* ===================== Header ======================== */
+.header {
+    padding: 30px 0 8px;
+    background-color: var(--dark-color);
+}
+
+.header--fixed {
+    position: sticky;
+    top: -22px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.logo__circle {
+    position: relative;
+}
+
+.logo__circle::before {
+    content: "";
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.logo__circle::after {
+    content: "";
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.logo__text {
+    margin-left: 0.6em;
+    text-align: right;
+}
+
+.logo__brand {
+    display: block;
+    color: #fff;
+    font-size: 1.8em;
+}
+
+.logo__brand--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.navbar {
+    display: flex;
+    margin-left: 6 0px;
+}
+
+.nav__link {
+    padding: 8px 21px;
+    /* background-color: red; */
+    color: #c9d2da;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.nav__link:hover {
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav__link--active {
+    position: relative;
+    color: #fff;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.nav__link--active:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 15px;
+    left: 7px;
+    background-color: #fff;
+}
+
+.account-actions {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.account-actions__login {
+    color: #c9d2da;
+    text-align: right;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.account-actions__sign-up {
+    min-width: 104px;
+    height: 44px;
+    border-radius: 22px;
+
+    color: #fff;
+    font-size: 1.6rem;
+}
+
 /* ===================== Common ======================== */
 /* ===================== Common ======================== */
 /* ===================== Common ======================== */
@@ -54,4 +201,6 @@ a {
 /* ===================== Common ======================== */
 /* ===================== Common ======================== */
 /* ===================== Common ======================== */
-/* ===================== Common ======================== */
+main {
+    height: 3000px;
+}
