@@ -82,6 +82,7 @@ a {
 .header--fixed {
     position: sticky;
     top: -22px;
+    z-index: 10;
 }
 
 .header-top {
@@ -141,26 +142,25 @@ a {
     margin-left: 6 0px;
 }
 
-.nav__link {
+.navbar__link {
     padding: 8px 21px;
-    /* background-color: red; */
     color: #c9d2da;
     font-size: 1.6rem;
     font-weight: 300;
 }
 
-.nav__link:hover {
+.navbar__link:hover {
     color: #fff;
     text-shadow: 1px 0 0 currentColor;
 }
 
-.nav__link--active {
+.navbar__link--active {
     position: relative;
     color: #fff;
     text-shadow: 1px 0 0 currentColor;
 }
 
-.nav__link--active:before {
+.navbar__link--active:before {
     content: "";
     width: 6px;
     height: 6px;
@@ -185,6 +185,10 @@ a {
     font-weight: 300;
 }
 
+.account-actions__login:hover {
+    text-decoration: underline;
+}
+
 .account-actions__sign-up {
     min-width: 104px;
     height: 44px;
@@ -193,8 +197,82 @@ a {
     color: #fff;
     font-size: 1.6rem;
 }
+/* ===================== Hero ======================== */
+.hero {
+    height: calc(100vh - 82px);
+    padding-bottom: 20px;
 
-/* ===================== Common ======================== */
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-color);
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__info {
+    width: 44%;
+}
+
+.hero__heading {
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 1.14;
+    letter-spacing: -0.14rem;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    color: #c9d2da;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67;
+}
+
+.hero__actions {
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+
+.hero__call {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.hero__call:hover {
+    text-decoration: underline;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img--above {
+    z-index: 1;
+}
+
+.hero__img--small {
+    width: 210px;
+    height: 410px;
+
+    position: relative;
+    left: -6px;
+}
 /* ===================== Common ======================== */
 /* ===================== Common ======================== */
 /* ===================== Common ======================== */
