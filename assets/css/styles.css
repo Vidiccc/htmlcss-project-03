@@ -453,7 +453,7 @@ a {
     padding: 85px 0;
 }
 
-.feature__body {
+.feature__inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
