@@ -289,8 +289,7 @@ a {
 }
 
 .hero__call:hover::after {
-    /* text-decoration: underline; */
-    transform: scaleX(1); /* Gạch chân xuất hiện dần */
+    transform: scaleX(1);
 }
 
 .hero__images {
@@ -408,7 +407,6 @@ a {
 }
 
 .step-item {
-    /* width: 31%; */
     border: 16px solid #eaf6ff;
     border-radius: 4px;
     transition: 0.25s;
@@ -420,8 +418,7 @@ a {
 }
 
 .step-item:hover .step-item__link {
-    color: #2e80ce;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .step-item__body {
@@ -444,9 +441,9 @@ a {
 }
 
 .step-item__link {
+    display: inline-block;
     margin-top: 18px;
-    color: #575f66;
-    font-weight: 300;
+    color: #2e80ce;
     line-height: 1.75;
 }
 
