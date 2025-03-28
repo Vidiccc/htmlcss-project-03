@@ -449,7 +449,8 @@ a {
 
 /* ===================== Feature ======================== */
 .feature {
-    padding-top: 170px;
+    margin-top: 85px;
+    padding: 85px 0;
 }
 
 .feature__body {
@@ -499,7 +500,7 @@ a {
 
 /* ===================== Appointment ======================== */
 .appointment {
-    padding-top: 170px;
+    padding: 85px 0;
 }
 
 .appointment__body {
