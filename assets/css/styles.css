@@ -27,6 +27,7 @@ body {
 /* ===================== Common ======================== */
 a {
     text-decoration: none;
+    color: currentColor;
 }
 
 .line-clamp {
@@ -96,6 +97,20 @@ a {
     color: #575f66;
     font-weight: 300;
     line-height: 1.75;
+}
+
+.control-btn {
+    color: #575f66;
+}
+
+.control-btn:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+.control-btn--right {
+    margin-left: 18px;
+    transform: scaleX(-1);
 }
 
 /* ===================== Header ======================== */
@@ -495,6 +510,59 @@ a {
 }
 
 /* ===================== Member ======================== */
+.member {
+    padding: 85px 0;
+    text-align: center;
+}
+
+.member__cta {
+    margin-top: 38px;
+}
+
+.member__list {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+}
+
+.member-item__thumb {
+    width: 270px;
+    height: 318px;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #eaf6ff;
+}
+
+.member-item__img {
+    height: calc(100% - 28px);
+    object-fit: cover;
+}
+
+.member-item__heading {
+    margin-top: 12px;
+    color: #10375c;
+    font-weight: 500;
+    line-height: 1.75; /* 175% */
+}
+
+.member-item__desc {
+    color: #575f66;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85; /* 185.714% */
+}
+
+.member__slider-controls {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ===================== Install ======================== */
 /* ===================== News ======================== */
 
@@ -529,6 +597,10 @@ a {
     left: 50%;
     transform: translateX(-50%);
     background-color: #2e80ce;
+}
+
+.appointment__call:hover {
+    text-decoration: underline;
 }
 
 /* ===================== Footer ======================== */
