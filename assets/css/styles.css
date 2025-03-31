@@ -564,6 +564,54 @@ a {
 }
 
 /* ===================== Install ======================== */
+.install {
+    padding: 85px 0;
+}
+
+.install__inner {
+    padding: 76px 70px;
+    display: flex;
+    justify-content: flex-end;
+
+    position: relative;
+    border-radius: 4px;
+    background-color: #2e80ce;
+}
+
+.install__media {
+    width: 284px;
+    height: 522px;
+
+    position: absolute;
+    bottom: 0;
+    left: 70px;
+}
+
+.install__img {
+    width: 100%;
+}
+
+.install__content {
+    width: 57%;
+}
+
+.install__heading {
+    width: 84%;
+    color: #fff;
+}
+
+.install__desc {
+    width: 100%;
+    color: #fff;
+}
+
+.install__cta {
+    margin-top: 38px;
+}
+
+.install__btn:last-child {
+    margin-left: 28px;
+}
 /* ===================== News ======================== */
 
 /* ===================== Appointment ======================== */
