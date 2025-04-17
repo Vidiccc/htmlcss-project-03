@@ -211,6 +211,7 @@ a {
     position: relative;
     color: #fff;
     text-shadow: 1px 0 0 currentColor;
+    white-space: nowrap;
 }
 
 .navbar__link--active:before {
