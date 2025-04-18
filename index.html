@@ -86,7 +86,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sora:wght@100..800&display=swap"
             rel="stylesheet"
         />
 
@@ -478,11 +478,10 @@
                     </div>
 
                     <!-- Slider controls -->
-                    <div class="member__slider-controls">
+                    <div class="member__slider-controls slider-controls">
                         <!-- Previous -->
-                        <button class="control-btn">
+                        <button class="slider-controls__btn">
                             <svg
-                                class="control-btn__icon"
                                 width="6"
                                 height="12"
                                 viewBox="0 0 6 12"
@@ -499,9 +498,10 @@
                         </button>
 
                         <!-- Next -->
-                        <button class="control-btn control-btn--right">
+                        <button
+                            class="slider-controls__btn slider-controls__btn--right"
+                        >
                             <svg
-                                class="control-btn__icon"
                                 width="6"
                                 height="12"
                                 viewBox="0 0 6 12"
@@ -562,6 +562,121 @@
             </section>
 
             <!-- News -->
+            <section class="news">
+                <div class="container">
+                    <div class="news__inner">
+                        <!-- Left -->
+                        <div class="news__content">
+                            <h2 class="section-heading">
+                                Read Latest News & Events.
+                            </h2>
+                            <a href="" class="news__link">Read All Blog</a>
+
+                            <!-- Slider controls -->
+                            <div class="news__slider-controls slider-controls">
+                                <!-- Previous -->
+                                <button class="slider-controls__btn">
+                                    <svg
+                                        width="6"
+                                        height="12"
+                                        viewBox="0 0 6 12"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M5.5 1L0.5 6L5.5 11"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+
+                                <!-- Next -->
+                                <button
+                                    class="slider-controls__btn slider-controls__btn--right"
+                                >
+                                    <svg
+                                        width="6"
+                                        height="12"
+                                        viewBox="0 0 6 12"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M5.5 1L0.5 6L5.5 11"
+                                            stroke="currentColor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Right -->
+                        <div class="news__list">
+                            <!-- News Item 1 -->
+                            <article class="news-item">
+                                <figure>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/news-01.png"
+                                            alt="Key Considerations for Regulatory Compliant."
+                                            class="news-item__thumb"
+                                        />
+                                    </a>
+                                </figure>
+                                <section class="news-item__body">
+                                    <h3>
+                                        <a href="#!" class="news-item__title">
+                                            Key Considerations for Regulatory
+                                            Compliant.
+                                        </a>
+                                    </h3>
+                                    <p class="news-item__desc">
+                                        It’s easy to think about medical care
+                                        from a narrow perspective. You go to the
+                                        hospital.
+                                    </p>
+                                    <a href="#!" class="news-item__link">
+                                        Learn More
+                                    </a>
+                                </section>
+                            </article>
+
+                            <!-- News Item 2 -->
+                            <article class="news-item">
+                                <figure>
+                                    <a href="#!">
+                                        <img
+                                            src="./assets/img/news-02.jpg"
+                                            alt="What Is Population Health Management?"
+                                            class="news-item__thumb"
+                                        />
+                                    </a>
+                                </figure>
+                                <section class="news-item__body">
+                                    <h3>
+                                        <a href="#!" class="news-item__title">
+                                            What Is Population Health
+                                            Management?
+                                        </a>
+                                    </h3>
+                                    <p class="news-item__desc">
+                                        It’s easy to think about medical care
+                                        from a narrow perspective. You go to the
+                                        hospital.
+                                    </p>
+                                    <a href="#!" class="news-item__link">
+                                        Learn More
+                                    </a>
+                                </section>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- Appointment -->
             <section class="appointment">
